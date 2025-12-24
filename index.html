@@ -260,7 +260,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Audio
-  let audio = new Audio('https://drive.google.com/uc?export=download&id=1BZd4rBnPIxD67K_qgXRFx1fqtVIJQpFC'); // Make sure path is correct
+  <audio controls>
+    <source src="https://drive.google.com/uc?export=download&id=1BZd4rBnPIxD67K_qgXRFx1fqtVIJQpFC" type="audio/mpeg">
+  </audio>
+
+  //let audio = new Audio('https://drive.google.com/uc?export=download&id=1BZd4rBnPIxD67K_qgXRFx1fqtVIJQpFC'); // Make sure path is correct
   audio.loop = true;
   audio.volume = 0.9;
   audio.muted = true;
@@ -308,6 +312,7 @@ hearts.forEach((heart, i) => {
 
 </body>
 </html>
+
 
 
 

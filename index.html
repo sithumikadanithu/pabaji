@@ -152,6 +152,30 @@
     background: rgba(255,182,193,0.9);
     z-index: 1000;
   }
+
+   .vid {
+  display: inline-block;
+  padding: 6px;
+  border: 2px solid #ffe4e1;
+  border-radius: 8px;
+  background: #ffe4e1; /* optional */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /* stack text and image vertically */
+  align-items: center;    /* center horizontally */
+  text-align: center;     /* optional, for the text */
+  margin: 0px;
+}
+
+.mus {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
 </style>
 </head>
 <body>
@@ -202,8 +226,23 @@
 <section id="messages">
   <h2>Personal Messages 💌</h2>
   <p>“Believe it! 🌸 You’re my favorite teammate, and I’m so glad we’re friends.”</p>
-  <p>“You’re amazing🌸”</p>
+  <p>“Click to play in background ⬇️”</p>
 </section>
+
+<div class="vid">
+  <iframe
+    class="mus"
+    width="400"
+    height="200"
+    src="https://www.youtube.com/embed/IXaOUXVawN4?list=RDIXaOUXVawN4"
+    title="IU 'Love wins all' Lyrics"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
 <!-- Quote Box -->
 <div id="quoteBox">Click me for a quote!</div>
@@ -309,6 +348,7 @@ hearts.forEach((heart, i) => {
 
 </body>
 </html>
+
 
 
 
